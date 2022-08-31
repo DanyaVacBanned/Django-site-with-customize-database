@@ -1,0 +1,28 @@
+{% extends 'index/layout.html' %}
+{% load static %}
+
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'index/css/update-style.css' %}">
+{% endblock %}
+
+
+{% block title %} Обновление записей {% endblock %}
+
+{% block content %}
+<div class="content"> 
+    <div class="title">
+        Форма для редактирования табеля
+    </div>
+<form class="form" method="post">
+    {% csrf_token %}
+    <ul>
+        <li>{{form.division}} Подразделение</li>
+        <li>{{form.subject}} Сотрудник</li>
+        <li>{{form.fiz_face}} Физическое лицо</li>
+        <li>{{form.tabel_time}} Табель учёта времени</li>
+    </ul>
+    <span>{{error}}</span>
+    <button class="btn btn-primary" type="submit">Редактировать запись</button>
+</form>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'index/layout.html' %}
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'index/css/style.css' %}">
+{% endblock %}
+
+{% block title %} Task {% endblock %}
+
+{% block content %}
+<div class = "line"></div>
+<div class = "container">
+    Привет, это тестовое приложение по учёту рабочего времени!
+</div>
+<a href="input" class="link_on_inp">Редактировать записи</a>
+{% endblock %}

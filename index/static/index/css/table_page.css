@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(0, 25, 39);
+}
+
+.content {
+    color:white;
+    width: 1170;
+    margin:0 auto;
+    position: relative;
+}
+
+.table {
+    color: white;
+    float:left;
+    clear:both;
+    width: 400px;
+    margin:20px 40%;
+    text-align: center;
+    background: linear-gradient(to top, #ff7e5f, #feb47b);
+}

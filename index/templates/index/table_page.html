@@ -1,0 +1,20 @@
+{% extends 'index/layout.html' %}
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'index/css/table_page.css' %}">
+{% endblock %}
+
+{% block title %} Таблица {% endblock %}
+{% block content %}
+<div class="content">
+    {% for el in articles %}
+        <div class="table">
+           <h3>Подразделение: {{ el.division }}</h3>
+           <p>Сотрудник: {{el.subject}}</p>
+           <p>Физическое лицо: {{el.fiz_face}}</p>
+           <p>Табель учёта: {{el.tabel_time}} ч.</p>
+           <a class="btn btn-primary" href="{% url 'update_page' el.id %}">Редактировать запись</a> 
+        </div>
+    {% endfor %}
+ </div>
+{% endblock %}

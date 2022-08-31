@@ -1,0 +1,37 @@
+{% extends 'index/layout.html' %}
+{% load static %}
+
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'index/css/input-style.css' %}">
+{% endblock %}
+
+
+{% block title %} Ввод {% endblock %}
+
+{% block content %}
+<div class = 'line'> </div>
+<div class="content"> 
+    <div class="title">
+        Форма для заполнения табеля
+    </div>
+<form class="form" method="post">
+    {% csrf_token %}
+    <ul>
+        <li>{{form.division}}</li>
+        <li>{{form.subject}}</li>
+        <li>{{form.fiz_face}}</li>
+        <li>{{form.tabel_time}}</li>
+    </ul>
+    <span>{{error}}</span>
+    <button class="btn btn-primary" type="submit">Добавить запись</button>
+</form>
+<form action="table_page" class="table_page">
+    <button class="btn btn-primary">Посмотреть записи</button>
+</form>
+
+
+
+
+</div>
+{% endblock %} 
