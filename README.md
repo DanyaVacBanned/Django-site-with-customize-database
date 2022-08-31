@@ -14,7 +14,7 @@ This a web-site, writed on Django for add and edit some posts
 Каждый отдельный пост можно редактировать, нажав соответствующую кнопку под ним. <br>
 (ENG)
 <br>
-A TEST TASK FOR A PYTHON DEVELOPER AT ST. PETERSBURG STATE UNIVERSITY.<br>
+A TEST TASK FOR A PYTHON DEVELOPER AT ST. PETERSBURG POLYTECHNIC UNIVERSITY.<br>
 <br>
 The essence of the application:<br>
 The application has the ability to add entries to the timesheet and edit them.<br>
